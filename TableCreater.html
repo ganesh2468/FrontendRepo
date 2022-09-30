@@ -1,0 +1,32 @@
+<!-- Write a JavaScript function that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table" border="1"> 
+    </table>
+    <input type="button" onclick="createTable()" value="Click for table"> 
+    <script>
+        function createTable()
+        {
+        row = window.prompt("Input number of rows");
+        column= window.prompt("Input number of columns");
+          
+         for(var r=0;r<parseInt(row,10);r++)
+          {
+           var i=document.getElementById('table').insertRow(r);
+           for(var c=0;c<parseInt(column,10);c++)  
+            {
+             var n=  i.insertCell(c);
+             n.innerHTML="Row-"+r+" Column-"+c; 
+            }
+           }
+        }
+        </script>  
+</body>
+</html>

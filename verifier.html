@@ -1,0 +1,28 @@
+<!-- A button element that is a descendent of another element with id wrapper was assigned to the variable btn. But, the existing button element has no parent node with id wrapper.
+Make the code work by creating a new element with id wrapper that wraps the existing button element. Verify your solution by clicking the button. It should change its text. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="button" >Click Me</button>
+<script>
+const button = document.querySelector('#button');
+const wrapper = document.createElement('div');
+wrapper.setAttribute('id', 'wrapper');
+button.parentNode.append(wrapper);
+wrapper.append(button);
+const btn = document.querySelector('#wrapper button');
+  const handleClick = () => {
+    button.innerText = 'Verified';
+  }
+  button.addEventListener('click', handleClick)
+</script>
+</body>
+</html>
