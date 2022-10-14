@@ -1,0 +1,82 @@
+
+.items {
+  margin-right: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: poifnter;
+  font-weight: bold;
+  color: #1877f2;
+  text-decoration:solid;
+}
+
+.store{
+  width: 50%;
+
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width:50%;
+  height: 50px;
+  padding-left: 320px;
+  
+}
+
+p{
+  width: 50%;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+.list {
+  list-style-type: none;
+  background-color:white;
+  height: 100%;
+  display: flex;
+  position: relative;
+ 
+}
+.fb_title{
+  float: left;
+    height: 50px;
+    margin-left: -200px;
+    
+}
+.fb_feeds{
+  width: 50%;
+  height: 500px;
+  
+}
+.home{
+  width: 50%;
+  height: 500px;
+}
+
+h3{
+  color: blue;
+}
+
+.btn {
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+  background-color: darkblue;
+  border-radius: 5px;
+}
+.link{
+  color:#1877f2;
+  text-decoration: none;
+}
+.footer{
+  background-color: #1877f2;
+  color: white;
+  height: 50px;
+width: 100%;
+  border-color: #000000;
+  bottom: 0;
+  position: fixed;
+}
+/* .items{
+  border: 2px solid blue;
+} */
